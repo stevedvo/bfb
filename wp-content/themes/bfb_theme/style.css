@@ -1,0 +1,409 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+body
+{
+	text-align: center;
+	background: url('images/background.jpg') fixed repeat;
+}
+
+#wrapper
+{
+	display: block;
+	/*border:	1px #a2a2a2 solid;*/
+	width: 100%;
+	margin: 0px auto;
+}
+
+#header
+{
+	/*border: 2px #a2a2a2 solid;*/
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	z-index: 2;
+	background: rgb(238,235,230);
+	line-height: 50px;
+	height: 50px;
+}
+
+#primary-navigation
+{
+	height: 50px;
+	float: right;
+	margin-right: 5%;
+}
+
+.menu-links-container
+{
+	clear: both;
+}
+
+#menu-toggle
+{
+	line-height: 50px;
+}
+
+#hidden-menu
+{
+	display: none;
+	list-style-type: none;
+	background: rgb(238,235,230);
+	line-height: 50px;
+}
+
+.menu-item
+{
+	padding: 0px 10px;
+	display: inline;
+}
+
+.menu-item a
+{
+	font: bold 16px Forum, serif;
+	color: #182f47;
+	text-decoration: none;
+}
+
+#primary-menu
+{
+	list-style-type: none;
+	padding-left: 0px;
+	display: none;
+}
+
+#site-header
+{
+	font-size: 24px;
+	font-family: brush script mt, cursive;
+	margin-left: 5%;
+	text-align: left;
+	float: left;
+}
+
+#main
+{
+	margin-top: 50px;
+}
+
+#content
+{
+	max-width: 480px;
+	margin: auto;
+	background: rgb(78,97,117);
+	padding: 20px 20px 50px;
+}
+
+#footer
+{
+	/*border: 2px #a2a2a2 solid;*/
+	width: 100%;
+}
+
+#footer h1
+{
+	font-size: 35px;
+}
+
+#delimiter
+{
+	clear: both;
+}
+
+.title
+{
+	font-size: 11pt;
+	font-family: verdana;
+	font-weight: bold;
+}
+
+h1 
+{
+	font-size: 40px;
+}
+
+h2
+{
+	font-size: 22px;
+}
+
+p
+{
+	font-size: 14px;
+}
+
+#home_bg_mob_port
+{
+	width: 100%;
+}
+
+#home_img_01
+{
+	width: 100%;
+	display: none;
+}
+
+.home_txt
+{
+	font: bold 24px garamond;
+}
+
+#about_img_01
+{
+	width: 100%;
+	max-width: 520px;
+	opacity: 0.10;
+	position: fixed;
+	top: 50px;
+	left: 0px;
+}
+
+#about_txt>p
+{
+	font: 16px garamond;
+	text-align: justify;
+	padding-bottom: 10px;
+}
+
+#contact_txt
+{
+	float: left;
+	width: 100%;
+}
+
+#contact_txt>article
+{
+	text-align: left;
+	margin-bottom: 15px;
+	font-family: garamond;
+}
+
+.wpcf7
+{
+	text-align: left;
+	line-height: 200%;
+	font-family: garamond;
+}
+
+.wpcf7-form>p>label
+{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.wpcf7-form>p>label>span>*
+{
+	background: rgb(239,222,189);
+	line-height: 200%;
+	border-radius: 5px;
+}
+
+.wpcf7-text
+{
+	width: 100%;
+}
+
+.wpcf7-textarea
+{
+	width: 100%;
+}
+
+.wpcf7-submit
+{
+	width: 100px;
+	height: 30px;
+	margin-top: 15px;
+	background: rgb(239,222,189);
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.del_item, .wedding_txt, .discount_txt
+{
+	margin-bottom: 15px;
+	width: 100%;
+	font-family: garamond;
+	font-size: 16px;
+}
+
+.discount_title
+{
+	margin-bottom: 20px;
+	width: 100%;
+	font-family: garamond;
+}
+
+#discount_img_01, #discount_img_02
+{
+	display: none;
+}
+
+@media only screen and (min-width: 520px)
+{
+	#about_img_01
+	{
+		width: 40%;
+		float: left;
+		opacity: 1.00;
+		position: relative;
+		top: 0px;
+		padding-right: 20px;
+	}
+	#address
+	{
+		float: left;
+		width: 47.5%;
+	}
+	#openingtimes
+	{
+		float: right;
+		width: 47.5%;
+	}
+	#contactus
+	{
+		float: left;
+		width: 100%;
+	}
+	.del_item
+	{
+		width: 47.5%;
+	}
+	#del_txt_01, #del_img_02, #del_txt_03
+	{
+		float: left;
+	}
+	#del_img_01, #del_txt_02, #del_img_03
+	{
+		float: right;
+	}
+	#discount_img_02
+	{
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 768px)
+{
+	#header
+	{
+		position: static;
+		background: transparent;
+		height: auto;
+	}
+	#primary-navigation
+	{
+		height: auto;
+		float: none;
+		margin: 0px;
+	}
+	#primary-menu
+	{
+		display: block;
+	}
+	#menu-toggle
+	{
+		display: none;
+	}
+	#hidden-menu
+	{
+		display: none;
+	}
+	.menu-item
+	{
+		padding: 0px 10px;
+	}
+	.menu-item a
+	{
+		font: bold 19px Forum, serif;
+		color: #182f47;
+		text-decoration: none;
+	}
+	.menu-item a:hover
+	{
+		color: white;
+	}
+	#site-header
+	{
+		font-size: 72px;
+		margin: 50px 0px 0px;
+		text-align: center;
+		float: none;
+		position: relative;
+		z-index: 1;
+	}
+	#main
+	{
+		margin: 0px;
+	}
+	#content
+	{	
+		float: left;
+/*		width: 95%;*/
+		max-width: 95%;
+		margin: 0 2.5%;
+	}
+	#home_img_01
+	{
+		display: block;
+		position: relative;
+		top: -16px;
+	}
+	#home_bg_mob_port
+	{
+		display: none;
+	}
+	#about_txt>p, .wedding_txt, .discount_txt
+	{
+		line-height: 150%;
+		padding-bottom: 20px;
+	}
+	#contact_txt
+	{
+		float: right;
+		width: 47.5%;
+	}
+	#address
+	{
+		width: 100%;
+	}
+	#openingtimes
+	{
+		float: left;
+		width: 100%;
+	}
+	#contact_form
+	{
+		float: left;
+		width: 47.5%;
+	}
+	#discount_img_02, #discount_img_03
+	{
+		display: none;
+	}
+	#discount_img_01
+	{
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 992px)
+{
+	.menu-item
+	{
+		padding: 0px 20px;
+	}
+	#content
+	{	
+		float: none;
+		max-width: 932px;
+		margin: auto;
+	}
+	#contact_form
+	{
+		float: none;
+	}
+}
